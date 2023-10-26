@@ -24,7 +24,7 @@ export default function Footer() {
 
 
         {/* first grid */}
-        <div className='contact flex flex-col'>
+        <div className='contact  md:mt-0 mt-6 flex flex-col'>
           <h3 className='text-darkBlue font-bold text-2xl'>Navigation</h3>
 
           <div className='flex-row my-4 '>
@@ -47,9 +47,9 @@ export default function Footer() {
 
 
 
-        <div className='contact flex flex-col'>
+        <div className='contact md:mt-0 mt-6 flex flex-col'>
 
-          <div className='flex flex-row my-4 '>
+          <div className='flex flex-row  '>
           
           
       
@@ -59,13 +59,13 @@ export default function Footer() {
                 alt="image" />
 
            
-            <h3 className='text-darkBlue font-bold py-3 text-2xl'>JVEC Solutions</h3>
+            <h3 className='text-darkBlue font-bold  text-2xl'>JVEC Solutions</h3>
            
 
 
           </div>
 
-          <p className='text-lg'>At JVEC, we believe that whatever is worth doing, is worth doing well.
+          <p className='font-thin text-base pt-3 '>At JVEC, we believe that whatever is worth doing, is worth doing well.
 
             This mindset is responsible for our conscientious approach to achieving quality service delivery. Over the years, we have built our brand on the foundation of excellence.</p>
 
@@ -84,7 +84,7 @@ export default function Footer() {
 
 
 
-        <div className='contact flex flex-col'>
+        <div className='contact md:mt-0 mt-6 flex flex-col'>
           <h3 className='text-darkBlue font-bold text-2xl'>Contact</h3>
 
           <div className="flex flex-row  justify-start items-center">
@@ -136,12 +136,14 @@ export default function Footer() {
 
       {/* bottom links */}
 
-      <div className='flex items-center space-x-36 justify-center flex-end '>
+      <div className='flex items-center my-10 md:flex-row md:space-x-36 justify-center flex-col '>
 
         <div className="flex flex-col justify-between row  md:flex-row">
-          <p className=" text-center md:text-left font-lighter text-lg text-black py-2">  &copy; Copyright <span className="  text-black">{newDay} </span> JVEC Solutions </p>
+          <p className=" text-center md:text-left font-lighter text-base text-black py-2">  &copy; Copyright <span className="  text-black">{newDay} </span> JVEC Solutions </p>
 
         </div>
+
+
         <div className='Email  flex  justify-start'>
           <span className=" rounded-[100%] my-5 mx-2 text-black  bg-orangeRed text-3xl"><a href="https://linkedin.com/company/feeds/posts/"><BsLinkedin className="p-1" /></a></span>
 
