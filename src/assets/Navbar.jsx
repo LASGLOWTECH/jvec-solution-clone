@@ -57,7 +57,7 @@ export default function Navbar() {
 
 
 
-                <div className="  md:flex callarea shadow-lg rounded-3xl px-3 py-2 border-2 border-darkestBlue">
+                <div className="  md:flex hidden callarea shadow-lg rounded-3xl px-3 py-2 border-2 border-darkestBlue">
  <p className="'text-greyDark  text-[20px] font-bold tracking-wider ">Call Now: +234-903-577-8224</p>
 
                 </div>
@@ -73,18 +73,21 @@ export default function Navbar() {
 
 
 
-        {show && (<div className=' bg-blue flex md:hidden transition-all  bg-white flex-col py-6 z-100  text-black  items-center'>
+        {show && (<div className=' flex md:hidden transition-all duration-700 0.5s ease-in flex-col py-6 z-100  text-black  items-center'>
                    
                     {navLinks.map((links) => {
                         return (
 
 
-                            <Link href={links.to} className='text-greyDark hover:border-b-2 py-6 z-100  font-bold tracking-wider text-base ' onClick={handleClose}key={links} >{links.link}</Link>
+                            <a href={links.to} className='text-greyDark hover:border-b-2 py-6 z-100  font-bold tracking-wider text-lg ' onClick={handleClose}key={links} >{links.link}</a>
 
 
                         )
                     })}
+      <div className="  flex items-centercallarea shadow-lg rounded-3xl px-3 py-2 border-2 border-darkestBlue">
+ <p className="'text-greyDark  text-lg font-bold tracking-wider ">Call Now: +234-903-577-8224</p>
 
+                </div>
 
                 </div>)}
             

@@ -28,9 +28,9 @@ export const Home = () => {
       <Carouselitem />
 
 
-      <div className="px-6 md:px-24 shadow-l gap-5 grid grid-cols-1 md:grid-cols-4 mt-6 z-10 md:-mt-[50px]">
+      <div className="px-6 md:px-24 shadow-l gap-5 grid grid-cols-1 md:grid-cols-4 mt-6 md:z-10 md:-mt-[50px]">
         <div className=' flex z-50 rounded-2xl  bg-darkBlue items-center p-2 py-6  text-center text-white justify-center flex-col '>
-          <h3 className='font-medium text-3xl px-2 '>
+          <h3 className='font-medium  text-[20px] md:text-3xl px-2 '>
             YOUR FIRST-CLASS ICT CONSULTANTS
 
           </h3>
@@ -45,7 +45,7 @@ export const Home = () => {
 
 
 
-        <div className=' flex z-50  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
+        <div className=' flex md:z-50  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
           <FaPeopleRobbery className='fill-darkBlue text-6xl py-2' />
           <h4 className='font-bold py-2 text-center text-2xl'>
 
@@ -62,7 +62,7 @@ export const Home = () => {
         {/* dgrid Three */}
 
 
-        <div className=' flex z-50  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
+        <div className=' flex md:z-50  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
           <SiWorkplace className='fill-darkBlue text-6xl py-2' />
           <h4 className='font-bold px-4 py-2 text-center text-2xl'>
 
@@ -78,7 +78,7 @@ export const Home = () => {
 
 
 
-        <div className=' flex z-50  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
+        <div className=' flex md:z-50  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
           <FcOnlineSupport className='fill-darkGreen text-6xl py-2' />
           <h4 className='font-bold py-2 text-center text-2xl'>
 
@@ -96,7 +96,7 @@ export const Home = () => {
 
       <section className='  px-6 py-7 md:p-24 mt-24 ' id='services'>
 
-        <h1 className='text-5xl  text-darkBlue text-center font-bold'>
+        <h1 className='md:text-5xl text-4xl   text-darkBlue text-center font-bold'>
           What We Do Best
 
         </h1>
@@ -106,9 +106,9 @@ export const Home = () => {
 
           {Services.map((service, index) => {
             return (
-              <div className='bg-green-100 px-8 py-8 flex flex-col  items-center ' key={index}>
+              <div className='bg-green-100 px-4 md:px-8 py-8 flex flex-col  items-center ' key={index}>
                 <img src={service.Picture} alt='servive-image' className='w-[80px]' />
-                <h4 className='font-medium text-center py-4 text-[20px] px-20 text-black' >{service.Title}</h4>
+                <h4 className='font-medium text-center py-4 text-[20px] px-10 md:px-20 text-black' >{service.Title}</h4>
 
               </div>
             )
@@ -211,7 +211,7 @@ Building Trust
 
 
 
-<h1 className='md:text-5xl mt-24 text-3xl  text-darkBlue text-center font-bold'>
+<h1 className='md:text-5xl mt-24 text-2xl  text-darkBlue text-center font-bold'>
 They Trust Us
 
 

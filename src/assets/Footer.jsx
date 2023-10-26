@@ -32,7 +32,7 @@ export default function Footer() {
             <p className='text-lg'>Services</p>
             <p className='text-lg'>About</p>
             <p className='text-lg'>Training</p>
-            <button className="text-base   rounded-md px-16  mt-3 py-2  text-white fonr-medium my-3 bg-darkGreen " value="Submit">Contact Us</button>
+            <button className="text-base   rounded-md px-16  mt-3 py-2  text-white fonr-medium my-3 bg-blue-600 " value="Submit">Contact Us</button>
 
 
             <h3 className='text-darkBlue font-bold py-3 text-lg'>Quick Links</h3>
@@ -47,7 +47,7 @@ export default function Footer() {
 
 
 
-        <div className='contact md:mt-0 mt-6 flex flex-col'>
+        <div className='contact md:mt-0 mt-12 flex flex-col'>
 
           <div className='flex flex-row  '>
           
@@ -84,7 +84,7 @@ export default function Footer() {
 
 
 
-        <div className='contact md:mt-0 mt-6 flex flex-col'>
+        <div className='contact md:mt-0 mt-16 flex flex-col'>
           <h3 className='text-darkBlue font-bold text-2xl'>Contact</h3>
 
           <div className="flex flex-row  justify-start items-center">
@@ -114,7 +114,7 @@ export default function Footer() {
           <div className="flex flex-row justify-left items-center pt-3">
 
             <span className=" rounded-[100%]    bg-orangeRed  text-black text-4xl">    <MdLocationOn className=" p-1 fill-darkBlue " /></span>
-            <p className="text-base pl-6  text-black ">12 Rev. Ogunbiyi Street, Off Oba Akinjobi, Ikeja GRA, Lagos, Nigeria.</p>
+            <p className="text-lg pl-6  text-black ">12 Rev. Ogunbiyi Street, Off Oba Akinjobi, Ikeja GRA, Lagos, Nigeria.</p>
           </div>
 
 

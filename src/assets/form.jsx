@@ -31,10 +31,10 @@ function Contact() {
 
 <section className='bg-cover bg-[url(/backfixedimg.png)]  md:bg-fixed bg-center ' id="contact" >
 
-<div className='py-8  px-6 overlay relative w-full h-full backdrop-brightness-50 flex justify-center items-center flex-col'>
+<div className='py-8 px-6  overlay relative w-full h-full backdrop-brightness-50 flex justify-center items-center flex-col'>
              
 
-<form className=" flex flex-col justify-center px-20 md:px-10  bg-opacity-50 rounded-2xl bg-darkBlue shadow-lg " onSubmit={onSubmit}>
+<form className=" flex flex-col justify-center md:w-auto w-full  px-6 md:px-20  bg-opacity-50 rounded-2xl bg-darkBlue shadow-lg " onSubmit={onSubmit}>
 
 {/* Name form */}
 <div className="email-send flex justify-beween flex-col ">
@@ -108,7 +108,7 @@ function Contact() {
 
 
 <div className="submit flex  flex-col justify-start ">
-<input type="submit" className="text-lg text-white flex place-self-start rounded-md px-16 py-2  my-3 bg-darkGreen" value="Submit"/>
+<input type="submit" className="text-lg text-white flex place-self-start rounded-md px-16 py-2  my-3 bg-blue-600" value="Submit"/>
 
 </div>
 

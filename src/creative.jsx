@@ -19,3 +19,6 @@ Picture:"/hero-image.jpg",
 ]
  
 export default Creatives;
+
+
+

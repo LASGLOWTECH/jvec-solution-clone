@@ -70,16 +70,10 @@ const Carouselitem = () => {
               <div className='overlay relative w-full h-full backdrop-brightness-50 my-6   flex justify-center items-center flex-col '>
 
                 <div className='w-[100px] mb-6 rounded-lg h-[3px] bg-darkGreen' data-aos="slide-right" />
-                <h1 className='text-5xl md:text-7xl  max-width-lg text-center shadow-md font-bold tracking-wider text-white ' data-aos-duration="1500" data-aos="zoom-in-down">{creative.Title}</h1>
+                <h1 className='text-4xl md:text-7xl  max-width-lg text-center shadow-md font-bold tracking-wider text-white ' data-aos-duration="1500" data-aos="zoom-in-down">{creative.Title}</h1>
                 <p className='pt-4 text-[18px] max-w-md text-white text-center shadow-sm font-normal ' data-aos-duration="1500" data-aos="slide-down">{creative.Subtext}</p>
                 <button className='bg-darkBlue px-3 mt-6 py-2 rounded-md  hover:bg-blue-500 transition duration-500 ease-in-out text-white   text-base text-lighter ' >Read More</button>
-                {/* 
-
-<div className='flex flex-row   z-20 justify-end px-auto mt-10  items-center'>
-<TfiArrowCircleLeft className='fill-white transition duration-500 ease-in-out hover:fill-blue-400 text-2xl '/>
-
-< TfiArrowCircleRight className='fill-white transition duration-500 ease-in-out hover:fill-blue-400 ml-24 text-2xl '/>
-</div> */}
+         
               </div>
 
 
