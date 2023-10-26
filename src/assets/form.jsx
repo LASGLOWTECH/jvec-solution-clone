@@ -29,7 +29,7 @@ function Contact() {
   return (
     <div className="App ">
 
-<section className='bg-cover bg-[url(/backfixedimg.png)]  md:bg-fixed bg-center '  >
+<section className='bg-cover bg-[url(/backfixedimg.png)]  md:bg-fixed bg-center ' id="contact" >
 
 <div className='py-8  px-6 overlay relative w-full h-full backdrop-brightness-50 flex justify-center items-center flex-col'>
              
@@ -108,7 +108,7 @@ function Contact() {
 
 
 <div className="submit flex  flex-col justify-start ">
-<input type="submit" className="text-base flex place-self-start rounded-md px-16 py-2  my-3 bg-darkGreen" value="Submit"/>
+<input type="submit" className="text-lg text-white flex place-self-start rounded-md px-16 py-2  my-3 bg-darkGreen" value="Submit"/>
 
 </div>
 
