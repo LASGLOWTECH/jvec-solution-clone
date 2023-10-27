@@ -41,7 +41,7 @@ export const Home = () => {
 
 
       <div className="px-6 md:px-24 shadow-l gap-5 grid grid-cols-1 md:grid-cols-4 mt-6 md:z-10 md:-mt-[50px]">
-        <div className=' flex z-50 rounded-2xl  bg-darkBlue items-center p-2 py-12  text-center text-white justify-center flex-col '>
+        <div className=' flex md:z-10 rounded-2xl  bg-darkBlue items-center p-2 py-12  text-center text-white justify-center flex-col ' data-aos="fade-up-left">
           <h3 className='font-medium  text-[20px] md:text-3xl px-2 '>
             YOUR FIRST-CLASS ICT CONSULTANTS
 
@@ -57,7 +57,7 @@ export const Home = () => {
 
 
 
-        <div className=' flex md:z-50  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
+        <div className=' flex md:z-10 bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
           <FaPeopleRobbery className='fill-darkBlue text-6xl py-2' />
           <h4 className='font-bold py-2 text-center text-2xl'>
 
@@ -74,7 +74,7 @@ export const Home = () => {
         {/* dgrid Three */}
 
 
-        <div className=' flex md:z-50  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
+        <div className=' flex md:z-10  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
           <SiWorkplace className='fill-darkBlue text-6xl py-2' />
           <h4 className='font-bold px-4 py-2 text-center text-2xl'>
 
@@ -90,7 +90,7 @@ export const Home = () => {
 
 
 
-        <div className=' flex md:z-50  bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
+        <div className=' flex md:z-10 bg-white shadow-2xl items-center px-2 rounded-2xl justify-center flex-col py-4'>
           <FcOnlineSupport className='fill-darkGreen text-6xl py-2' />
           <h4 className='font-bold py-2 text-center text-2xl'>
 
@@ -106,7 +106,7 @@ export const Home = () => {
 
       {/* A section for Services */}
 
-      <section className='  px-6 py-7 md:p-24 mt-24 ' id='services'>
+      <section className='  px-6 py-7 md:p-24 mt-24 ' id='Services'>
 
         <h1 className='md:text-5xl text-4xl   text-darkBlue text-center font-bold'>
           What We Do Best
@@ -130,7 +130,7 @@ export const Home = () => {
         </div>
 
 <div className='flex  justify-center items-center'>
-<Link href ="/https://jvecsolutions.com/services/"><button className='bg-blue-600 mx-auto px-6  mt-6 py-3 rounded-md  hover:bg-blue-500 transition duration-500 ease-in-out text-white   text-xl font-medium ' >Learn More</button></Link>
+<a href ="/#Services"><button className='bg-blue-600 mx-auto px-6  mt-6 py-3 rounded-md  hover:bg-blue-500 transition duration-500 ease-in-out text-white   text-xl font-medium ' >Learn More</button></a>
 
 </div>
 
@@ -143,7 +143,7 @@ export const Home = () => {
 
 
 {/* Our Stive section */}
-      <section className='  px-6 py-6 md:p-24' id='services'>
+      <section className='  px-6 py-6 md:p-24' id='about'>
 
 <div className='grid gap-2 py-6 mt-6 grid-cols-1 md:grid-cols-2'>
 
@@ -254,9 +254,10 @@ How can we be of help?
 
 
 {/* contact section */}
-
+<section id="contact">
 
 <Contact/>
+</section>
     </>
 
   )

@@ -32,7 +32,7 @@ export default function Footer() {
             <p className='text-lg'>Services</p>
             <p className='text-lg'>About</p>
             <p className='text-lg'>Training</p>
-            <button className="text-base   rounded-md px-16  mt-3 py-2  text-white fonr-medium my-3 bg-blue-600 " value="Submit">Contact Us</button>
+           <a href="/https://wa.me/2349031821590" target="_blank" ><button className="text-base   rounded-md px-16  mt-3 py-2  text-white fonr-medium my-3 bg-blue-600 " value="Submit">Contact Us</button></a>
 
 
             <h3 className='text-darkBlue font-bold py-3 text-lg'>Quick Links</h3>
@@ -145,11 +145,11 @@ export default function Footer() {
 
 
         <div className='Email  flex  justify-start'>
-          <span className=" rounded-[100%] my-5 mx-2 text-black  bg-orangeRed text-3xl"><a href="https://linkedin.com/company/feeds/posts/"><BsLinkedin className="p-1" /></a></span>
+          <span className=" rounded-[100%] my-5 mx-2 text-darkBlue  bg-orangeRed text-3xl"><a href="https://linkedin.com/in/austinosaz"><BsLinkedin className="p-1" /></a></span>
 
-          <span className=" rounded-[100%]   my-5 me-2 text-black bg-orangeRed  text-3xl"><a href="https://twitter.com/50rein2023"><BsTwitter className="p-1" /></a></span>
-          <span className="rounded-[100%] my-5  mx-2  text-blackbg-orangeRed  text-3xl"><a href="https://www.facebook.com/50rein"><FaFacebookF className="p-1" /></a></span>
-          <span className=" rounded-[100%] my-5 mx-2 text-black  bg-orangeRed text-3xl"><a href="https://instagram.com/50rein/"><FaInstagram className="p-1" /></a></span>
+          <span className=" rounded-[100%]   my-5 me-2 text-darkBlue bg-orangeRed  text-3xl"><a href="https://twitter.com/OmozemojeAugus1" target="_blank"><BsTwitter className="p-1" /></a></span>
+          <span className="rounded-[100%] my-5  mx-2  text-darkBlue  text-3xl"><a href="https://m.facebook.com/omozemoje.augustineoisasoje" target="_blank"><FaFacebookF className="p-1" /></a></span>
+          <span className=" rounded-[100%] my-5 mx-2 text-darkBlue  bg-orangeRed text-3xl"><a href="https://instagram.com/austineosaz/"><FaInstagram className="p-1" /></a></span>
 
         </div>
 

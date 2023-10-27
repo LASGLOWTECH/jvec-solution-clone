@@ -21,12 +21,12 @@ export default function Navbar() {
     }
 
 
-    const navLinks = [{ link: 'Home', to: "/" }, { link: 'Services', to: "/https://jvecsolutions.com/services/ " }, { link: 'About', to: "/https://jvecsolutions.com/about/" }, { link: 'Contact', to: "/https://jvecsolutions.com/contact/" },
+    const navLinks = [{ link: 'Home', goto: "/" }, { link: 'Services', goto: "/#Services " }, { link: 'About', goto: "/#about" }, { link: 'Contact', goto: "/#contact" },
 
     ]
     return (
 <>
-        <div className=' bg-white md:fixed  top-0 width-full shadow    z-10  px-6 w-full md:px-24'>
+        <div className=' bg-white md:fixed  top-0 width-full shadow    z-30  px-6 w-full md:px-24'>
 
             <div className="  mx-auto flex  justify-between  w-full items-center   py-3  ">
 
@@ -46,7 +46,7 @@ export default function Navbar() {
                         return (
 
 
-                            <Link href={links.to} className='text-greyDark hover:border-b-2 hover:border-b-darkestBlue px-6   font-bold tracking-wider text-base ' key={links} >{links.link}</Link>
+                       <a href ={links.goto} className='text-greyDark hover:border-b-2 hover:border-b-darkestBlue px-6   font-bold tracking-wider text-base ' key={links} >{links.link}</a>
 
 
                         )

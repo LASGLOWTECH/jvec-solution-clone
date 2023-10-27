@@ -29,7 +29,7 @@ function Contact() {
   return (
     <div className="App ">
 
-<section className='bg-cover bg-[url(/backfixedimg.png)]  md:bg-fixed bg-center ' id="contact" >
+<section className='bg-cover bg-[url(/backfixedimg.png)]  md:bg-fixed bg-center '  >
 
 <div className='py-8 px-6  overlay relative w-full h-full backdrop-brightness-50 flex justify-center items-center flex-col'>
              
