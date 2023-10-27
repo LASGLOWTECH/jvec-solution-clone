@@ -79,7 +79,7 @@ export default function Navbar() {
                         return (
 
 
-                            <a href={links.to} className='text-greyDark hover:border-b-2 py-6 z-100  font-bold tracking-wider text-lg ' onClick={handleClose}key={links} >{links.link}</a>
+                            <a href ={links.goto}  onClick={handleClose} key={links} >{links.link}</a>
 
 
                         )
