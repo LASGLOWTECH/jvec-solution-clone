@@ -32,7 +32,7 @@ export default function Footer() {
             <p className='text-lg'>Services</p>
             <p className='text-lg'>About</p>
             <p className='text-lg'>Training</p>
-           <a href="/https://wa.me/2349031821590" target="_blank" ><button className="text-base   rounded-md px-16  mt-3 py-2  text-white fonr-medium my-3 bg-blue-600 " value="Submit">Contact Us</button></a>
+           <a href="/https://wa.me/2349031821590" target="_blank" ><button className="text-base   rounded-md px-6  mt-3 py-3  text-white fonr-medium my-3 bg-blue-600 " value="Submit">Contact Us</button></a>
 
 
             <h3 className='text-darkBlue font-bold py-3 text-lg'>Quick Links</h3>
