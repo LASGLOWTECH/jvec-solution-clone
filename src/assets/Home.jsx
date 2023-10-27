@@ -1,12 +1,16 @@
 import React from 'react'
-import { useState } from 'react';
+
+import { useEffect, useState } from "react";
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // import carousel item component
 import Testifiers from './Trustcarousel';
 import Carouselitem from './carousel';
 // import Services component
 import Services from './serviceslist';
 
-
+import { Link } from 'react-router-dom';
 // creative list
 
 import Whyus from '../whyus';
@@ -23,13 +27,21 @@ import Contact from './form';
 export const Home = () => {
 
 
+  useEffect(() => {
+    setInterval(() => {
+      AOS.init({ duration: 3000 });
+
+    }, 1000);
+
+  }, []);
+
   return (
     <>
       <Carouselitem />
 
 
       <div className="px-6 md:px-24 shadow-l gap-5 grid grid-cols-1 md:grid-cols-4 mt-6 md:z-10 md:-mt-[50px]">
-        <div className=' flex z-50 rounded-2xl  bg-darkBlue items-center p-2 py-6  text-center text-white justify-center flex-col '>
+        <div className=' flex z-50 rounded-2xl  bg-darkBlue items-center p-2 py-12  text-center text-white justify-center flex-col '>
           <h3 className='font-medium  text-[20px] md:text-3xl px-2 '>
             YOUR FIRST-CLASS ICT CONSULTANTS
 
@@ -106,9 +118,9 @@ export const Home = () => {
 
           {Services.map((service, index) => {
             return (
-              <div className='bg-green-100 px-4 md:px-8 py-8 flex flex-col  items-center ' key={index}>
+              <div className='bg-blue-100 px-4 md:px-8 py-8 flex flex-col  items-center ' key={index}>
                 <img src={service.Picture} alt='servive-image' className='w-[80px]' />
-                <h4 className='font-medium text-center py-4 text-[20px] px-10 md:px-20 text-black' >{service.Title}</h4>
+                <h4 className='font-medium text-center py-4 text-[20px] px-10 md:px-16 text-black' >{service.Title}</h4>
 
               </div>
             )
@@ -117,8 +129,8 @@ export const Home = () => {
 
         </div>
 
-<div className='flex items-center'>
-<button className='bg-blue-600 mx-auto px-6  mt-6 py-3 rounded-md  hover:bg-blue-500 transition duration-500 ease-in-out text-white   text-xl font-medium ' >Learn More</button>
+<div className='flex  justify-center items-center'>
+<Link href ="/https://jvecsolutions.com/services/"><button className='bg-blue-600 mx-auto px-6  mt-6 py-3 rounded-md  hover:bg-blue-500 transition duration-500 ease-in-out text-white   text-xl font-medium ' >Learn More</button></Link>
 
 </div>
 
@@ -138,7 +150,7 @@ export const Home = () => {
 
 <div className='flex max-w-md flex-col items-center justify-center py-4'>
 
-<h1 className='md:text-5xl text-3xl  text-center md:text-left   text-darkBlue  font-bold'>
+<h1 className='md:text-5xl text-3xl  text-center md:text-left   text-darkBlue  font-bold' data-aos="slide-down" duration="500">
 We thrive on Excellence
 </h1>
 <p className='text-grey-500 text-center  md:text-left font-medium pt-4 text-lg '>At JVEC, we’re Excellence driven. This mindset
@@ -153,7 +165,7 @@ is responsible for the high-level commitment and dedication we give in deliverin
 <img src="synergy2.jpeg" alt='ourthrive-image ' className='rounded-3xl  hidden md:flex w-full' />
 
 
-<img src="synergy.jpeg" alt='ourthrive-image' className='md:-ml-[50px]  rounded-3xl  w-full md:-mt-[50px]' />
+<img src="synergy.jpeg" alt='ourthrive-image' className='md:-ml-[50px]  rounded-3xl  w-full md:-mt-[50px]' data-aos="slide-up" duration="500" />
 
 </div>
 
@@ -174,7 +186,7 @@ Why Brands Choose Us
 
           {Whyus.map((creative , index) => {
             return (
-              <div className=' px-4 py-4 flex flex-col  items-center ' key={index}>
+              <div className=' px-4 py-4 flex flex-col  items-center 'data-aos="slide-up" duration="200"  key={index}>
                 <img src={creative.Picture} alt='servive-image' className='w-[100px]' />
                 <h3 className='font-bold  md:font-medium text-center py-4 text-2xl md:text-3xl   text-darkBlue' >{creative.Title}</h3>
                 <p className='text-grey-500 text-center  font-medium pt-2 text-lg '>{creative.Subtext}</p>

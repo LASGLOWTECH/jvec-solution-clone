@@ -21,7 +21,7 @@ export default function Navbar() {
     }
 
 
-    const navLinks = [{ link: 'Home', to: "/" }, { link: 'Services', to: "/#services" }, { link: 'About', to: "/#Building-trust" }, { link: 'Contact', to: "/#contact" },
+    const navLinks = [{ link: 'Home', to: "/" }, { link: 'Services', to: "/https://jvecsolutions.com/services/ " }, { link: 'About', to: "/https://jvecsolutions.com/about/" }, { link: 'Contact', to: "/https://jvecsolutions.com/contact/" },
 
     ]
     return (
@@ -73,7 +73,7 @@ export default function Navbar() {
 
 
 
-        {show && (<div className=' flex md:hidden transition-all duration-700 0.5s ease-in flex-col py-6 z-100  text-black  items-center'>
+        {show && (<div className=' flex md:hidden transition translate-y-6 transform-gpu  duration-700 ease-in-out delay-150 flex-col py-6 z-100  text-black  items-center'  >
                    
                     {navLinks.map((links) => {
                         return (

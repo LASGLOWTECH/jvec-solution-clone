@@ -64,7 +64,7 @@ const Testifiers = () => {
               >
 
               <div className='   flex justify-center p-6 flex-col '>
-              <p className='pt-4 text-bas text-gray-800  shadow-sm font-normal ' data-aos-duration="1500" data-aos="slide-down">Few months ago, I saw an advert on Data Analytics Training posted by Social media influencer - Inneh Joseph on LinkedIn. The training paved way for me in my new job - the first task given to me as Head of HR was in Excel; 
+              <p className='pt-4 text-bas text-gray-800  shadow-sm font-normal ' data-aos-duration="1500" data-aos="slide-down">{Testimony.Subtext}
               {Testimony.Subtext}</p>
               <div className='w-[50px] my-8 rounded-lg h-[3px] bg-darkGreen' data-aos="slide-right" />
                   < h4 className='text-black font-bold text-3xl'>  {Testimony.Title}</h4>

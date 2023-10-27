@@ -2,10 +2,11 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Creatives from '../creative';
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -72,7 +73,7 @@ const Carouselitem = () => {
                 <div className='w-[100px] mb-6 rounded-lg h-[3px] bg-darkGreen' data-aos="slide-right" />
                 <h1 className='text-4xl md:text-7xl  max-width-lg text-center shadow-md font-bold tracking-wider text-white ' data-aos-duration="1500" data-aos="zoom-in-down">{creative.Title}</h1>
                 <p className='pt-4 text-[18px] max-w-md text-white text-center shadow-sm font-normal ' data-aos-duration="1500" data-aos="slide-down">{creative.Subtext}</p>
-                <button className='bg-darkBlue px-3 mt-6 py-2 rounded-md  hover:bg-blue-500 transition duration-500 ease-in-out text-white   text-base text-lighter ' >Read More</button>
+              <Link href="/https://jvecsolutions.com/about/" >  <button className='bg-darkBlue px-3 mt-6 py-2 rounded-md  hover:bg-blue-500 transition duration-500 ease-in-out text-white   text-base text-lighter ' >Read More</button></Link>
          
               </div>
 
