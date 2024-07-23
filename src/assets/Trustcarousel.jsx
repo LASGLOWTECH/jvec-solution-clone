@@ -45,8 +45,8 @@ const Testifiers = () => {
 
 
       <Carousel responsive={responsive}
-        customTransition="all 7s"
-        transitionDuration={2000}
+       
+       
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         ssr={true} // means to render carousel on server-side.
